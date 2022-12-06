@@ -1,0 +1,24 @@
+%YAML 1.1
+---
+
+generator:
+  label_count: 8
+
+# Format config
+# Keys and values are passed directly to LaTex header
+#
+# If no value is provided, just the key will be added.
+#
+# format:
+#   LabelInfotrue:
+#
+# Will result in \LabelInfoTrue
+
+format:
+  LabelCols: 2
+  LabelRows: 4
+  LeftPageMargin: 0mm
+  RightPageMargin: 0mm
+  TopPageMargin: 8mm
+  BottomPageMargin: 8mm
+  RightLabelBorder: 10mm
