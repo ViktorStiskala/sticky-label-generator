@@ -1,7 +1,8 @@
 # Sticky label generator
 
-A Python CLI utility that generates sticky labels using XeLaTeX. This utility allows for customization of label format using format files
-and supports multiple label formats.
+A Python CLI utility for generating customizable sticky labels using XeLaTeX, with support for multiple label
+formats and customization of label output using format files. The tool takes input in the form of a .tex file,
+and the `--labels` argument can be provided multiple times to allow printing multiple labels on a single sheet.
 
 ## Usage
 
@@ -22,7 +23,7 @@ Options:
 ## Formats
 
 The utility uses format files, specified in yaml, to specify the output format for XeLaTeX for specific sticky label types.
-The format files include information such as the number of labels, font size, and page margins.
+The format files include information such as the total number of labels, font size, and page margins.
 This allows users to create custom output formats for their labels. An example of a format file is shown below:
 
 ```yaml
