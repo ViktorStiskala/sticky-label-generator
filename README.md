@@ -20,6 +20,23 @@ Options:
 
 ```
 
+### Example usage
+
+```yaml
+$ generate-labels formats/Rayfilm_8pcs_105_70.yml --skip 2 --labels 3 address.tex --labels 2 sender.tex
+```
+This command will use a Rayfilm 8 stickers format, skip first two labels and create two types of labels.
+The resulting PDF file will look like this:
+
+
+|    empty    |    empty    |
+|:-----------:|:-----------:|
+| `{address}` | `{address}` |
+| `{address}` | `{sender}`  |
+| `{sender}`  |  **empty**  |
+
+
+
 ## Formats
 
 The utility uses format files, specified in yaml, to specify the output format for XeLaTeX for specific sticky label types.
